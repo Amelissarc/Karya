@@ -4,7 +4,6 @@
     padding: 0%;
     width: 100%;
 }
-
 body {
     background-color:#FFFFFF;
     color: #091625;
@@ -12,6 +11,8 @@ body {
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     overflow: hidden;
+    width: 100%;
+    height: auto;
 }
 header {
     display: flex;
@@ -66,13 +67,14 @@ a {
     font-size: 16px;
     margin-top: 5px;
 }
+
 /* Account-cart-header */
 .account-cart-header {
     display: flex;
     align-items: center;
     justify-content: right;
-    margin-right: 200px;
-
+    padding-right: 200px;
+    overflow: hidden;
 }
 .account, .cart, a  {
    display: flex;
@@ -87,34 +89,102 @@ a {
     font-size: 25px; 
     margin: 0px;
     width: 120px;
-
 }
-
 .account, .cart , p {
     font-size: 16px;
     color: #FFFFFF;
 }
+.account-cart-header a, i p {
+    display: flex;
+    align-items: center;
+}
 
 /* Aside */
+aside {
+    overflow: hidden;
+    width: 100%;
+}
 .categories-products {
     display: flex;
     text-align: left;
     align-items: center;
     background-color:#E6E8E9;
-    width: 100%;
     top: 88px;
     height: 64px;
     position: fixed;
 }
-.category-products, ul li {
-    padding-left: 45px;
+.category-products, ul, li {
+    padding-left: 30px;
 }
 .category-products, ul, li, a {
     display: inline;
     color: #535C67;
+    font-size: 15px;
 }
 
 /* Main */
 main {
     margin: 20px 92px;
+    height: auto;
+    width: 100%;
+}
+
+/* You cart */
+.content {
+    margin-top: 92px;
+    padding: 0px;
+    color: #091625;
+}
+
+.content h4 {
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 24px;
+}
+.your-cart-items {
+    display: flex;
+    flex-direction: column;
+}
+.your-cart-pack {
+    display: flex;
+    justify-content: space-evenly;
+}
+.select-pack {
+    display: flex;
+    border-bottom: 1px solid #CED0D3;
+}
+.img-product {
+    width: 120px;
+    height: 120px;
+    margin: 40px 0px 49px;
+    background-color: #E6E8E9;
+}
+.inf-product {
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 18px;
+    margin: 40px 0px 49px 20px;
+}
+.inf-product-caracteres ul li {
+    display: block;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 14px;
+}
+.inf-product-edit button {
+    display: inline;
+    width: 100px;
+    border: none;
+    background-color: transparent;
+    margin: 24px 0px 0px;
+    text-align: left;
+} 
+.inf-product-edit i {
+    display: inline;
+    width: 20px;
+}
+.total-price {
+    margin: 40px 0px 49px 20px;
+    line-height: 24px;
+    width: 300px;
 }
