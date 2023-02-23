@@ -27,8 +27,8 @@
             <label for="search-input" class="sr-only">Search products</label>
             <div class="input-group">
               <div class="input-group-prepend">
-                <button class="btn btn-outline-secondary" type="submit" id="btn-search" aria-label="btn-search">
-                  <i class="fa-solid fa-search"></i>
+                <i class="fa-solid fa-search"></i>
+                <button class="btn-outline-secondary" type="submit" id="btn-search" aria-label="btn-search">
                 </button>
               </div>
               <input id="search-input" class="form-control" type="search" placeholder="Search products" aria-label="Search">
@@ -70,8 +70,8 @@
     <main>
         <!-- Your cart -->
         <div class="content your-cart">
-            <h4>Your cart</h4>
             <div class="your-cart-items">
+                <h4>Your cart</h4>
                 <div class="your-cart-pack">
                     <div class="select-pack">
                         <div class="img-product"></div>
@@ -145,9 +145,19 @@
             </div>
             <!-- Order Summary -->
             <div class="order-summary">
-                <div class="order-summary-title"></div>
-                <div class="order-summary-content"></div>
-                <div class="order-summary-footer"></div>
+                <h4>Order Summary</h4>
+                <div class="order-summary-content">
+                    <div class="number-items">
+                        <p class="grey">Number of items</p>
+                    </div>
+                    <div class="total">
+                        <h5>Total: </h5>
+                    </div>
+                </div>
+                <div class="order-summary-footer">
+                    <button type="button" class="btn btn-blue">Proceed to Checkout</button>
+                    <button type="button" class="btn btn-white">Continue shopping</button>
+                </div>
             </div>
         </div>
         <!-- You migth also like -->
