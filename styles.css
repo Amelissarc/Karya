@@ -1,0 +1,101 @@
+/* Generales */
+* {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+
+body {
+    background-color:#FFFFFF;
+    color: #091625;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+header {
+    display: flex;
+    background-color:#091625;
+    color: #FFFFFF;
+    padding: 20px 92px;
+    height: 48px;
+}
+a {
+    text-decoration: none;
+    color:#091625 ;
+}
+
+/* Logo */
+.logo-header {
+    background-color: #CED0D3;
+    position: absolute;
+    height: 48px;
+    width: 172px;
+}
+.logo-header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+}
+
+/* Search */
+.input-group {
+    display: flex;
+}
+.input-group-prepend {
+    display: flex;
+    width: 40px;
+    margin-left: 200px;
+    z-index: 1001;
+}
+.input-group-prepend button {
+    height: 48px;
+    border:none;
+    background-color: transparent;
+    margin-left: 60px;
+    color: #091625;
+    font-size: 16px;
+}
+#search-input {
+    background-color: #FFFFFF;
+    width: 696px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0px 40px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+/* Account-cart-header */
+.account-cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 200px;
+
+}
+.account, .cart , a  {
+   display: flex;
+   align-items: center;
+   justify-content: left;
+   height: 48px;
+}
+.account, .cart , a i {
+    display: flex;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 25px; 
+    margin: 0px;
+    width: 120px;
+
+}
+
+.account, .cart , p {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+/* Main */
+main {
+    margin: 20px 92px;
+}
