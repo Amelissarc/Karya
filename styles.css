@@ -95,6 +95,25 @@ a {
     color: #FFFFFF;
 }
 
+/* Aside */
+.categories-products {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    background-color:#E6E8E9;
+    width: 100%;
+    top: 88px;
+    height: 64px;
+    position: fixed;
+}
+.category-products, ul li {
+    padding-left: 45px;
+}
+.category-products, ul, li, a {
+    display: inline;
+    color: #535C67;
+}
+
 /* Main */
 main {
     margin: 20px 92px;
