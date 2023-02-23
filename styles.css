@@ -74,13 +74,13 @@ a {
     margin-right: 200px;
 
 }
-.account, .cart , a  {
+.account, .cart, a  {
    display: flex;
    align-items: center;
    justify-content: left;
    height: 48px;
 }
-.account, .cart , a i {
+.account, .cart, a i {
     display: flex;
     text-align: center;
     color: #FFFFFF;
