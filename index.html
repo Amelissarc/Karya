@@ -12,44 +12,47 @@
 
     <!-- Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="logo-header">
-            <a href="#">Logo</a>
+            <img src="./img/tipo blancotrabajo.png" alt="logo">
         </div>
 
-        <form class="search-header">
-            <label for="search-input" class="sr-only">Search products</label>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <i class="fa-solid fa-search"></i>
-                <button class="btn-outline-secondary" type="submit" id="btn-search" aria-label="btn-search">
-                </button>
-              </div>
-              <input id="search-input" class="form-control" type="search" placeholder="Search products" aria-label="Search">
-            </div>
-        </form>
-          
-        <div class="account-cart-header">
-            <div class="account">
-                <a href="#" aria-label="user">
-                    <i class="fa-regular fa-user"></i>
-                    <p>Sing in</p>
-                </a>
-            </div>
-            <div class="cart">
-                <a href="#" aria-label="cart">
-                    <i class="fa-solid fa-basket-shopping"></i>
-                    <p>Cart</p>
-                </a>
+        <div class="header-search-cart">
+            <form class="search-header">
+                <label for="search-input" class="sr-only">Search products</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <i class="fa-solid fa-search"></i>
+                    <button class="btn-outline-secondary" type="submit" id="btn-search" aria-label="btn-search">
+                    </button>
+                  </div>
+                  <input id="search-input" class="form-control" type="search" placeholder="Search products" aria-label="Search">
+                </div>
+            </form>
+              
+            <div class="account-cart-header">
+                <div class="account">
+                    <a href="#" aria-label="user">
+                        <i class="fa-regular fa-user"></i>
+                        <p>Sing in</p>
+                    </a>
+                </div>
+                <div class="cart">
+                    <a href="#" aria-label="cart">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <p>Cart</p>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
+        
     <!-- Aside -->
     <aside>
         <!-- category -->
@@ -57,11 +60,12 @@
             <div class="category-products">
                 <ul>
                     <li><a href="#">All products</a></li>
-                    <li><a href="#">Packaging</a></li>
+                    <li><a href="#">Yoga set</a></li>
                     <li><a href="#">Drinkware</a></li>
-                    <li><a href="#">Apparel</a></li>
-                    <li><a href="#">Notebooks</a></li>
-                    <li><a href="#">Backpacks</a></li>
+                    <li><a href="#">Bolster</a></li>
+                    <li><a href="#">Yoga Block</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Boooks</a></li>
                 </ul>
             </div>
         </div>
@@ -77,16 +81,15 @@
                         <div class="img-product"></div>
                         <div class="inf-product">
                             <div class="inf-product-title">
-                                <h5>My Christmas pack</h5>
+                                <h5>Kit Yoga Mat</h5>
                             </div>
                             <div class="inf-product-subtitle">
                                 <h6>Quantity:</h6>
                             </div>
                             <div class="inf-product-caracteres">
                                 <ul>
-                                    <li>Cardboard box:</li>
-                                    <li>Unisex Short Sleeve T-Shirt</li>
-                                    <li>Basic bottle</li>
+                                    <li>Mat extreme 4mm</li>
+                                    <li>Yoga block</li>
                                 </ul>
                             </div>
                             <div class="inf-product-edit">
@@ -161,47 +164,83 @@
             </div>
         </div>
         <!-- You migth also like -->
-        <div class="content you-might">
-            <div class="you-might-item">
-                <div class="img-item"></div>
-                <div class="inf-item">
-                    <div class="title-item"></div>
-                    <div class="text-item">
-                        <div class="price"></div>
-                        <div class="minumum"></div>
+        <div class=" content you-might">
+            <h4>Your cart</h4>
+            <div class="you-migth-others">
+                <div class="you-might-item">
+                    <div class="img-item">
+                        <img src="#" alt="theraband">
+                    </div>
+                    <div class="inf-item">
+                        <div class="title-item">
+                            <h4>Theraband</h4>
+                        </div>
+                        <div class="text-item">
+                            <div class="price">
+                                <p>$10 - $24</p>
+                            </div>
+                            <div class="minumum">
+                                <p class="grey">Minimim: </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="you-might-item">
+                    <div class="img-item">
+                        <img src="#" alt="Dummbells">
+                    </div>
+                    <div class="inf-item">
+                        <div class="title-item">
+                            <h4>Dummbells</h4>
+                        </div>
+                        <div class="text-item">
+                            <div class="price">
+                                <p>$10 - $24</p>
+                            </div>
+                            <div class="minumum">
+                                <p class="grey">Minimum: </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="you-might-item">
+                    <div class="img-item">
+                        <img src="#" alt="bottle">
+                    </div>
+                    <div class="inf-item">
+                        <div class="title-item">
+                            <h4>Woman bottle</h4>
+                        </div>
+                        <div class="text-item">
+                            <div class="price">
+                                <p>$10 - $24</p>
+                            </div>
+                            <div class="minumum">
+                                <p class="grey">Minimum: </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="you-might-item">
+                    <div class="img-item">
+                        <img src="#" alt="Shirt">
+                    </div>
+                    <div class="inf-item">
+                        <div class="title-item">
+                            <h4>Basic T-Shirt</h4>
+                        </div>
+                        <div class="text-item">
+                            <div class="price">
+                                <p>$10 - $24</p>
+                            </div>
+                            <div class="minumum">
+                                <p class="grey">Minimum: </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="you-might-item">
-                <div class="img-item"></div>
-                <div class="inf-item">
-                    <div class="title-item"></div>
-                    <div class="text-item">
-                        <div class="price"></div>
-                        <div class="minumum"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="you-might-item">
-                <div class="img-item"></div>
-                <div class="inf-item">
-                    <div class="title-item"></div>
-                    <div class="text-item">
-                        <div class="price"></div>
-                        <div class="minumum"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="you-might-item">
-                <div class="img-item"></div>
-                <div class="inf-item">
-                    <div class="title-item"></div>
-                    <div class="text-item">
-                        <div class="price"></div>
-                        <div class="minumum"></div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </main>
     <!-- Footer -->
